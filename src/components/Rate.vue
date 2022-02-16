@@ -16,6 +16,19 @@ let props = defineProps({
   value: Number,
   theme: { type: String, default: "orange" },
 });
+
+/*
+  props 的第二种写法
+  
+  let props = defineProps({
+    modelValue: Number,
+    theme: {type: String, default: 'orange'}
+  })
+  let emits = defineEmits(['update:modelValue'])
+
+  <Rate v-model="score"></Rate>
+*/
+
 let rate = computed(() =>
   "★★★★★☆☆☆☆☆".slice(5 - props.value, 10 - props.value)
 );

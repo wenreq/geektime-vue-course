@@ -10,7 +10,16 @@ export default function useTodos() {
     done: false
   }])
 
+  let showModal = ref(false)
+
   function addTodo() {
+    if (!title.value) {
+      showModal.value = true
+      setTimeout(() => {
+        showModal.value = false
+      }, 1500)
+      return
+    }
     todos.value.push({
       title: title.value,
       done: false
@@ -38,6 +47,7 @@ export default function useTodos() {
   return {
     title,
     todos,
+    showModal,
     addTodo,
     clear,
     active,
