@@ -1,7 +1,7 @@
 <template>  
   <div>
     <h1 @click="add">{{count}}</h1>
-    <h1 @click="toggle">click</h1>
+    <h1 @click="toggle">click我全屏</h1>
     <input type="text" v-model="title" @keydown.enter="addTodo">
     <button v-if="active < all" @click="clear">清理</button>
     <ul v-if="todos.length">
