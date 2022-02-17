@@ -16,11 +16,14 @@
     <h1 v-if="showTitle">你好 Vue 3</h1>
   </transition>
   <h1 v-if="showTitle">Hello Vue 3</h1>
+
+  手写vuex中的<Count />
 </template>
 
 <script setup>
   import {ref} from 'vue'
   import Rate from '../components/Rate.vue'
+  import Count from '../components/Count.vue'
   let score = ref(3.5)
   function update(num) {
     score.value = num
