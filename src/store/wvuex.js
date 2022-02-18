@@ -7,7 +7,7 @@
 */
 
 // 我们使用一个 Store 类来管理数据，类的内部使用 _state 存储数据，使用 mutations 来存储数据修改的函数，注意这里的 state 已经使用 reactive 包裹成响应式数据了。
-import { inject, reactive } from "vue";
+import { inject, reactive } from "vue"
 
 const STORE_KEY = '__store__'
 function useStore() { 

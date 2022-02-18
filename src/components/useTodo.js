@@ -1,7 +1,7 @@
 import {
   ref,
   computed
-} from "vue";
+} from "vue"
 
 export default function useTodos() {
   let title = ref("")

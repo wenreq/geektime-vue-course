@@ -18,12 +18,17 @@
   <h1 v-if="showTitle">Hello Vue 3</h1>
 
   手写vuex中的<Count />
+
+  <hr>
+  jsx
+  <Heading :level="1">Hello geekTime</Heading>
 </template>
 
 <script setup>
   import {ref} from 'vue'
   import Rate from '../components/Rate.vue'
   import Count from '../components/Count.vue'
+  import Heading from '../components/Heading.jsx'
   let score = ref(3.5)
   function update(num) {
     score.value = num

@@ -1,6 +1,6 @@
 import {
   createStore
-} from "./wvuex";
+} from "./wvuex"
 
 const store = createStore({
   state() {
